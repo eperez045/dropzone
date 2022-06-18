@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import logo from '../images/Vector.svg'
 import { GoogleLogin, GoogleLogout } from "react-google-login";
 
 export default function App() {
@@ -21,11 +21,15 @@ export default function App() {
   };
   return (
     <div className="App">
-      <h1>Login with Google</h1>
+      <h4>Bienvenido a DDrop</h4>
+      <h6>Para subir tus archivos de forma simple a drive, puedes hacer LogIn a través de Google.</h6>
       {!loginStatus && (
         <GoogleLogin
           clientId="671348139606-906f7lcl8vk6l26hivc1ka0hk2teuvb1.apps.googleusercontent.com"
-          buttonText="Login"
+          render={renderProps => (
+            <button className="buttongoogle" onClick={renderProps.onClick} disabled={renderProps.disabled}><img src={logo} alt="Logo"/>Login con Google</button>
+          )}
+          buttonText="Login con Google"
           onSuccess={responseGoogle}
           onFailure={responseGoogle}
           cookiePolicy={"single_host_origin"}

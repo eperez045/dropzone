@@ -30,15 +30,17 @@ export default function App() {
             : "";
 
           return (
-            <div className="section">
-                <div
+        <div className="section">
+            <div
               {...getRootProps({
                 className: `dropzone ${additionalClass}`
               })}
             >
               <input {...getInputProps()} />
-              <span>{isDragActive ? "📂" : "📁"}</span>
-              <p>ARRASTRA TUS ARCHIVOS AQUI</p>
+              {/* <span>{isDragActive ? "📂" : "📁"}</span> */}
+              <div>
+              <p className="textdrop">ARRASTRA TUS ARCHIVOS AQUI</p>
+              </div>
               <div>{isDragAccept ? "Tu archivo se ha subido correctamente" : ""}</div>
                 <ul>
                 {fileNames.map(fileName => (
@@ -46,7 +48,12 @@ export default function App() {
                 ))}
                 </ul>
             </div>
-            </div>
+            <button {...getRootProps({
+                className: 'buttondrop'
+              })}>
+            Subir archivos
+            </button>
+        </div>
             
           );
         }}
