@@ -42,8 +42,8 @@ body {
   transform: translate(-50%, -50%);
 }
 .archivodrop{
-  font-size: 1rem;
-  background-color: #232730;
+  font-size: 1.2rem;
+  color: #569B51;
   padding: 0.5rem;
   left: 50%;
   position: absolute;
@@ -79,7 +79,7 @@ body {
   padding-bottom: 0.5em;
 }
 .plogin{
-  font-size: 1em;
+  font-size: 1.1em;
   padding-bottom: 3em;
   width: 20rem;
 }
