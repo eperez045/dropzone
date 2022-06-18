@@ -11,7 +11,6 @@ body {
   color: #eeeeee;
 }
 
-
 .sectiondrop{
   height: 100vh;
   width: 70vw;
@@ -27,17 +26,29 @@ body {
   height: 25rem;
   width: 35rem;
   background-color: #130F26;
-  text-align: center;
+  position: relative;
   border-radius: 5px;
   color: #eeeeee;
   box-shadow: 0px 0px 39px 20px rgba(86,155,81,0.84);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin-top: 4em;
+  text-align: center;
 }
 .textdrop{
   font-weight: 500;
   font-size: 1.5rem;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.archivodrop{
+  font-size: 1rem;
+  background-color: #232730;
+  padding: 0.5rem;
+  left: 50%;
+  position: absolute;
+  top: 80%;
+  transform: translate(-50%, -50%);
 }
 
 .buttondrop{
@@ -47,10 +58,13 @@ body {
   align-items: center;
   padding: 20px;
   color: #eeeeee;
-  background: #569B51;
+  background-color: #569B51;
   border-radius: 5px;
   border: none;
   font-family: monospace;
+}
+.buttondrop:hover{
+  background-color: #396736;
 }
 
 .accept {
@@ -66,7 +80,18 @@ body {
 }
 .plogin{
   font-size: 1em;
-  padding-bottom: 1em;
+  padding-bottom: 3em;
+  width: 20rem;
+}
+.barra{
+  height: 2px;
+  background-color: #39424E;
+  width: 20rem;
+  margin-bottom: 3em;
+}
+.logo{
+  vertical-align: middle;
+  padding-right: 2em;
 }
 
 .buttongoogle{
@@ -78,7 +103,10 @@ body {
   border-radius: 5px;
   width: 20rem;
 }
-@media (max-width: 900px){
+.buttongoogle:hover{
+  background-color: #232730;
+}
+@media (max-width: 700px){
   .sectiondrop{
     width: 100vw;
     height: 70vh;

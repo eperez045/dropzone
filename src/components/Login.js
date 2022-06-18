@@ -28,7 +28,7 @@ export default function App() {
         <GoogleLogin
           clientId="671348139606-906f7lcl8vk6l26hivc1ka0hk2teuvb1.apps.googleusercontent.com"
           render={renderProps => (
-            <button className="buttongoogle" onClick={renderProps.onClick} disabled={renderProps.disabled}><img src={logo} alt="Logo"/>Login con Google</button>
+            <button className="buttongoogle" onClick={renderProps.onClick} disabled={renderProps.disabled}><img src={logo} alt="Logo" className="logo"/>Login con Google</button>
           )}
           buttonText="Login con Google"
           onSuccess={responseGoogle}

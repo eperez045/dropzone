@@ -37,16 +37,17 @@ export default function App() {
               })}
             >
               <input {...getInputProps()} />
-              <div>
-              <p className="textdrop">ARRASTRA TUS ARCHIVOS AQUI</p>
-              </div>
+              
+              <h3 className="textdrop">ARRASTRA TUS ARCHIVOS AQUI</h3>
+            
               <div>{isDragAccept ? "Tu archivo se puede subir" : ""}</div>
               <div>{isDragReject ? "Tu archivo no se puede subir" : ""}</div>
-                <ul>
+              <br />
+                <div className="archivodrop">
                 {fileNames.map(fileName => (
-                    <li key={fileName}>{fileName}</li>
+                    <p key={fileName}>{fileName}</p>
                 ))}
-                </ul>
+                </div>
             </div>
             <button {...getRootProps({
                 className: 'buttondrop'
