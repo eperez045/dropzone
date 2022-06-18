@@ -12,19 +12,22 @@ body {
 }
 
 
-.section{
+.sectiondrop{
   height: 100vh;
+  width: 70vw;
   display: grid;
   align-items: center;
   justify-content: center;
 }
+.sectionlogin{
+  width: 30vw;
+}
 
 .dropzone {
   height: 25rem;
-  width: 25rem;
+  width: 35rem;
   background-color: #130F26;
   text-align: center;
-  margin-right: 10em;
   border-radius: 5px;
   color: #eeeeee;
   box-shadow: 0px 0px 39px 20px rgba(86,155,81,0.84);
@@ -38,13 +41,11 @@ body {
 }
 
 .buttondrop{
-  margin-right: 10em;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 20px;
-  gap: 15px;
   color: #eeeeee;
   background: #569B51;
   border-radius: 5px;
@@ -53,11 +54,19 @@ body {
 }
 
 .accept {
-  background-color: #107c10 !important;
+  background-color: #569B51 !important;
 }
 
 .reject {
   border-color: #d83b01 !important;
+}
+.titlelogin{
+  font-size: 2.5em;
+  padding-bottom: 0.5em;
+}
+.plogin{
+  font-size: 1em;
+  padding-bottom: 1em;
 }
 
 .buttongoogle{
@@ -68,4 +77,21 @@ body {
   padding: 10px;
   border-radius: 5px;
   width: 20rem;
+}
+@media (max-width: 900px){
+  .sectiondrop{
+    width: 100vw;
+    height: 70vh;
+  }
+  .sectionlogin{
+    width: 100vw;
+    margin-left: 3em;
+  }
+  .dropzone{
+    height: 20rem;
+    width: 15rem;
+  }
+  .buttongoogle{
+    width: 10rem;
+  }
 }

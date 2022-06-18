@@ -30,18 +30,18 @@ export default function App() {
             : "";
 
           return (
-        <div className="section">
+        <div className="sectiondrop">
             <div
               {...getRootProps({
                 className: `dropzone ${additionalClass}`
               })}
             >
               <input {...getInputProps()} />
-              {/* <span>{isDragActive ? "📂" : "📁"}</span> */}
               <div>
               <p className="textdrop">ARRASTRA TUS ARCHIVOS AQUI</p>
               </div>
-              <div>{isDragAccept ? "Tu archivo se ha subido correctamente" : ""}</div>
+              <div>{isDragAccept ? "Tu archivo se puede subir" : ""}</div>
+              <div>{isDragReject ? "Tu archivo no se puede subir" : ""}</div>
                 <ul>
                 {fileNames.map(fileName => (
                     <li key={fileName}>{fileName}</li>

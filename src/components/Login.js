@@ -20,9 +20,10 @@ export default function App() {
     setLoginStatus(false);
   };
   return (
-    <div className="App">
-      <h4>Bienvenido a DDrop</h4>
-      <h6>Para subir tus archivos de forma simple a drive, puedes hacer LogIn a través de Google.</h6>
+    <div className="sectionlogin">
+      <h4 className="titlelogin">Bienvenido a DDrop</h4>
+      <h6 className="plogin">Para subir tus archivos de forma simple a drive, puedes hacer LogIn a través de Google.</h6>
+      <div className="barra"></div>
       {!loginStatus && (
         <GoogleLogin
           clientId="671348139606-906f7lcl8vk6l26hivc1ka0hk2teuvb1.apps.googleusercontent.com"
