@@ -26,7 +26,7 @@ export default function App() {
       <div className="barra"></div>
       {!loginStatus && (
         <GoogleLogin
-          clientId="605833573989-3gnc4rfj5rg4l856u93sjrir0ff02g48.apps.googleusercontent.com"
+          clientId="605833573989-iu7jlhnct9p3nag0jslbo4hmuju098j1.apps.googleusercontent.com"
           render={renderProps => (
             <button className="buttongoogle" onClick={renderProps.onClick} disabled={renderProps.disabled}><img src={logo} alt="Logo" className="logo"/>Login con Google</button>
           )}

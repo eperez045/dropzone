@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: monospace;
+  font-family: 'Space Mono', monospace;
   background-color: #130F26;
   color: #eeeeee;
 }
@@ -20,6 +20,9 @@ body {
 }
 .sectionlogin{
   width: 30vw;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
 .dropzone {
@@ -61,7 +64,7 @@ body {
   background-color: #569B51;
   border-radius: 5px;
   border: none;
-  font-family: monospace;
+  font-family: 'Space Mono', monospace;
 }
 .buttondrop:hover{
   background-color: #396736;
@@ -75,11 +78,11 @@ body {
   border-color: #d83b01 !important;
 }
 .titlelogin{
-  font-size: 2.5em;
+  font-size: 2em;
   padding-bottom: 0.5em;
 }
 .plogin{
-  font-size: 1.1em;
+  font-size: 0.8em;
   padding-bottom: 3em;
   width: 20rem;
 }
@@ -102,6 +105,7 @@ body {
   padding: 10px;
   border-radius: 5px;
   width: 20rem;
+  margin-bottom: 3em;
 }
 .buttongoogle:hover{
   background-color: #232730;
@@ -113,11 +117,14 @@ body {
   }
   .sectionlogin{
     width: 100vw;
-    margin-left: 3em;
   }
   .dropzone{
     height: 20rem;
     width: 15rem;
+  }
+  .titlelogin{
+    margin-top: 1em;
+    font-size: 1.5em;
   }
   .buttongoogle{
     width: 10rem;
