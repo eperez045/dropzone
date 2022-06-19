@@ -43,7 +43,7 @@ export default function App() {
           <img src={url} alt={name} />
           <br />
           <GoogleLogout
-            clientId="671348139606-906f7lcl8vk6l26hivc1ka0hk2teuvb1.apps.googleusercontent.com"
+            clientId="605833573989-iu7jlhnct9p3nag0jslbo4hmuju098j1.apps.googleusercontent.com"
             buttonText="Logout"
             onLogoutSuccess={logout}
           />
